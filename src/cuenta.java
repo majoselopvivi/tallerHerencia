@@ -22,7 +22,7 @@ public class cuenta {
         return saldo;
     }
 
-    public void setNumeroCuenta(){
+    public void setNumeroCuenta(String numeroCuenta){
         this.numeroCuenta = numeroCuenta;
     }
 
@@ -55,6 +55,10 @@ public class cuenta {
             System.out.println("Fondo insuficientes o cantidad invalidad.");
         }
     }
+        protected void actualizarSaldoConSobregiro(double cantidad) {
+        this.saldo -= cantidad;
+    }
+
 
     public void mostrarInfo(){
         System.out.println("Numero de cuenta: " + numeroCuenta);
