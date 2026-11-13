@@ -55,9 +55,6 @@ public class cuenta {
             System.out.println("Fondo insuficientes o cantidad invalidad.");
         }
     }
-        protected void actualizarSaldoConSobregiro(double cantidad) {
-        this.saldo -= cantidad;
-    }
 
 
     public void mostrarInfo(){
